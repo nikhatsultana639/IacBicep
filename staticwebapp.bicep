@@ -1,5 +1,5 @@
 resource azstaticapp 'Microsoft.Web/staticSites@2022-09-01' = {
-  name: 'nstaticapp'
+  name: 'nteststaticapp'
   location: 'global'
   tags: {
     createdbyemail: 'nikhath.sulthana@genzeon.com'

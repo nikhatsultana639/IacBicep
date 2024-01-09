@@ -1,0 +1,14 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  buld:
+    runs-on: ubuntu-latest
+    steps:
+    - name: bicep-build-output
+      uses: Azure/bicep-build-action@v1.0.1
+      with:
+        bicepFilePath: ./master/staticapp.bicep
+        outputFilePath: ./azuredeploy.json
+          

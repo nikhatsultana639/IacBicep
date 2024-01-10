@@ -6,6 +6,10 @@ jobs:
   buld:
     runs-on: ubuntu-latest
     steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: List Repository Contents
+      run: ls -R
     - name: bicep-build-output
       uses: Azure/bicep-build-action@v1.0.1
       with:

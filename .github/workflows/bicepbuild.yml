@@ -9,6 +9,6 @@ jobs:
     - name: bicep-build-output
       uses: Azure/bicep-build-action@v1.0.1
       with:
-        bicepFilePath: .github/workflows/staticweb.bicep
-        outputFilePath: .github/workflows/azuredeploy.json
+        bicepFilePath: ./staticweb.bicep
+        outputFilePath: ./azuredeploy.json
           
